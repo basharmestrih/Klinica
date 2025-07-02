@@ -5,17 +5,17 @@ const services = [
   {
     title: "Book Appointments",
     description: "Book directly your desired appointment and get notified your book is done",
-    image: "src/Pages/Home/assets/bookcard.jpg",
+    image: "/assets/bookcard.jpg",
   },
   {
     title: "Health Products",
     description: "Discover doctor-approved supplements, vitamins, and essentials.",
-    image: "src/Pages/Home/assets/as.jpg",
+    image: "/assets/as.jpg",
   },
   {
     title: "Wellness Tips",
     description: "Daily tips and lifestyle advice to stay active, energized, and stress-free.",
-    image: "src/Pages/Home/assets/tipscard2.jpg",
+    image: "/assets/tipscard2.jpg",
   },
 ];
 
