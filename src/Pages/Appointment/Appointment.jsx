@@ -28,7 +28,7 @@ const AppointmentPage = () => {
       {/* LEFT - Image Section */}
       <div className="w-2/3 flex">
         <img
-          src="src/Pages/Appointment/assets/rojen.jpg"
+          src="/assets/rojen.jpg"
           alt="Doctor"
           className="object-cover shadow-md"
         />
