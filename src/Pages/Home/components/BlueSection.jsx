@@ -63,7 +63,7 @@ const BlueSection = () => {
         {/* Right Side */}
         <div className="flex justify-end bg-white w-[700px] h-full">
           <img
-            src="src/Pages/Home/assets/nurse2.jpg"
+            src="/assets/nurse2.jpg"
             alt="Clinic"
             className="shadow-lg h-full object-cover"
           />
