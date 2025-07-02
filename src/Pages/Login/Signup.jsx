@@ -27,7 +27,7 @@ const Signup = () => {
             {/* Right: Full-Size Image with no background */}
             <div className="hidden lg:block w-3/4 h-[750px]">
         <img
-          src="src/Pages/Login/assets/create.jpg" // 👈 Update this path as needed
+          src="/assets/create.jpg" // 
           alt="Health Illustration"
           className="w-full h-full object-cover"
         />
