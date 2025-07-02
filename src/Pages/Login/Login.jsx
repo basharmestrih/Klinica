@@ -17,7 +17,7 @@ const Login = () => {
         {/* Right Column */}
         <div className="flex justify-center w-3/4">
           <img
-            src="src/Pages/Login/assets/254.jpg"
+            src="/assets/254.jpg"
             alt="Half Page Image"
             className="object-cover h-screen w-[100%]"
           />
