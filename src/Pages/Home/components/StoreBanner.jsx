@@ -7,7 +7,7 @@ const StoreBanner = () => {
         {/* Background image with opacity */}
         <div
           className="absolute inset-0 bg-center bg-cover"
-          style={{ backgroundImage: `url('src/Pages/Home/assets/store.jpg')` }}
+          style={{ backgroundImage: `url('/assets/store.jpg')` }}
         ></div>
 
         {/* Overlay content */}
