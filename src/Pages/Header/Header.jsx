@@ -5,6 +5,7 @@ import CartPopup from "../ClinicStore/Components/CartPopup.jsx"; // ✅ Cart Pop
 import { useDispatch } from "react-redux";
 import { logoutUser } from  '../Login/Redux/AuthSlice.jsx';
 import SidebarMenu from "../SideBarMenu/SidebarMenu.jsx"; // adjust path as needed
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -15,6 +16,10 @@ const Header = () => {
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   const [isCartOpen, setCartOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navigate = useNavigate();
+   const navigateTo = (route) => {
+    navigate(`/${route}`);
+  };
 
   
   const handleLogout = () => {
@@ -42,11 +47,11 @@ const Header = () => {
         >
  
         </div>
-        <a href="/" className="text-[#007bff] font-bold px-2 py-1 rounded-md transition duration-300 hover:bg-[#007bff] hover:text-white">Home</a>
-        <a href="/login" className="text-[#007bff] font-bold px-2 py-1  rounded-md transition duration-300 hover:bg-[#007bff] hover:text-white">Login</a>
-        <a href="/appointments" className="text-[#007bff] font-bold px-2 py-1  rounded-md transition duration-300 hover:bg-[#007bff] hover:text-white">Appointments</a>
-        <a href="/store" className="text-[#007bff] font-bold inline-block px-2 py-1 rounded-md transition duration-300 hover:bg-[#007bff] hover:text-white">Store</a>
-        <a href="/contact" className="text-[#007bff] font-bold inline-block px-2 py-1 rounded-md transition duration-300 hover:bg-[#007bff] hover:text-white">Contact Us</a>
+  <span onClick={() => navigateTo('')} className="cursor-pointer text-[#007bff] font-bold px-2 py-1 rounded-md transition duration-300 hover:bg-[#007bff] hover:text-white">Home</span>
+  <span onClick={() => navigateTo('login')} className="cursor-pointer text-[#007bff] font-bold px-2 py-1 rounded-md transition duration-300 hover:bg-[#007bff] hover:text-white">Login</span>
+  <span onClick={() => navigateTo('appointments')} className="cursor-pointer text-[#007bff] font-bold px-2 py-1 rounded-md transition duration-300 hover:bg-[#007bff] hover:text-white">Appointments</span>
+  <span onClick={() => navigateTo('store')} className="cursor-pointer text-[#007bff] font-bold px-2 py-1 rounded-md transition duration-300 hover:bg-[#007bff] hover:text-white">Store</span>
+  <span onClick={() => navigateTo('contact')} className="cursor-pointer text-[#007bff] font-bold px-2 py-1 rounded-md transition duration-300 hover:bg-[#007bff] hover:text-white">Contact Us</span>
 
         {/* User Avatar */}
         {isLoggedIn && user?.email && (
